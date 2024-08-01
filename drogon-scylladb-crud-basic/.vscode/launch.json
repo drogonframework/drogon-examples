@@ -1,0 +1,25 @@
+{
+    "compounds": [
+        {
+            "name": "_LAUNCH: drogon-scylladb-crud-basic",
+            "stopAll": true,
+            "configurations":
+            [
+                "DEBUG: backend_api"
+            ]
+        }
+    ],
+    "configurations":
+    [
+        {
+            "name": "DEBUG: backend_api",
+            "type": "cppdbg", // for windows=cppvsdbg
+            "request": "launch",
+            "cwd": "${workspaceFolder}/bin",
+            "program": "${workspaceRoot}/bin/backend_api",
+            "stopAtEntry": false,
+            "args": [],
+            "environment": []
+        }
+    ]
+}
