@@ -14,8 +14,8 @@
                     {
                         "auth": 2, // 0:undefined 1:AllowAllAuthenticator 2:PasswordAuthenticator 3:com.scylladb.auth.TransitionalAuthenticator
                         "hosts": "127.0.0.1",
-                        "username": "scylla",
-                        "password": "scyllaa123"
+                        "username": "cassandra", // this is default, change this if modified
+                        "password": "cassandra" // this is default, change this if modified
                     }
                 }
             },
