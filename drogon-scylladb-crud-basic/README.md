@@ -21,8 +21,8 @@ An example of basic create, update, read, and delete with [drogon framework](htt
 if this is the first time you installed scylladb, consider to:
 
 - set [connection auth mode](./configs/json/backend.api.json#L15) to 1
-- set [connection auth mode](./configs/json/backend.api.json#L15) to 2, if you already set username and password for database connection
-- the rest of connection auth mode hasn't been tested, cloud services for scylladb quite pricy
+- set [connection auth mode](./configs/json/backend.api.json#L15) to 2, if you already set username and password for database connection, by default it will using `cassandra` as username & `cassandra` as password
+- the rest of connection auth mode hasn't been tested
 
 <br>
 
@@ -55,9 +55,13 @@ if this is the first time you installed scylladb, consider to:
 - documentations:
     - [database design](./docs/database-design.md)
     - [url endpoint api](./docs/url-endpoint-api.md)
+    - [thunder client collection for this example](./thunder_client-collection-drogon-_scylladb_crud_basic.json)
+
+    <br>
 
     - [scylladb collection types](https://opensource.docs.scylladb.com/stable/cql/types.html#collections)
     - [scylladb custom defined types](https://opensource.docs.scylladb.com/stable/cql/types.html#user-defined-types)
+    - [scylladb enable/disable authentication](https://opensource.docs.scylladb.com/stable/operating-scylla/security/runtime-authentication.html)
 
 <br>
 
