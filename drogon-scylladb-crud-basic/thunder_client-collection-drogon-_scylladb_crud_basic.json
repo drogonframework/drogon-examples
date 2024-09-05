@@ -1,0 +1,173 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "drogon-scylladb-crud-basic",
+    "collectionId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+    "dateExported": "2024-09-05T14:36:22.596Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "01de795e-add3-429c-8da2-caa90a12b06d",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/stash/{idAccount}/{idStash}/delete/item",
+            "url": "http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/82db987e-51bd-41e1-8cc7-48ea8a78e234/delete/item",
+            "method": "PATCH",
+            "sortNum": 10000,
+            "created": "2024-09-05T14:34:10.577Z",
+            "modified": "2024-09-05T14:34:10.577Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"item_name\": \"item 3\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "cddcc02b-312b-468e-8f27-fb5c4e515828",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/stash/{idAccount}/{idStash}/delete",
+            "url": "http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/8e262994-0fa4-41c0-8522-76e65ec27193/delete",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-09-05T14:34:41.241Z",
+            "modified": "2024-09-05T14:34:41.241Z",
+            "headers": []
+        },
+        {
+            "_id": "141fada5-6965-4b9b-abce-c53148a05808",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/stash/{idAccount}/{idStash}/add/item",
+            "url": "http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/82db987e-51bd-41e1-8cc7-48ea8a78e234/add/item",
+            "method": "PATCH",
+            "sortNum": 30000,
+            "created": "2024-09-05T14:34:58.516Z",
+            "modified": "2024-09-05T14:34:58.516Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"item_name\": \"\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "db38b761-0493-493a-ba5f-ce1c521d8d45",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/stash/{idAccount}/all",
+            "url": "http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/all",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-09-05T14:35:10.808Z",
+            "modified": "2024-09-05T14:35:10.808Z",
+            "headers": []
+        },
+        {
+            "_id": "f245c6e6-c8a3-4a59-a027-4e73d4091270",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/stash/{idAccount}/new",
+            "url": "http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/new",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2024-09-05T14:35:18.008Z",
+            "modified": "2024-09-05T14:35:18.008Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"stash_name\": \"stash2\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ab37dd8c-85bc-4d5f-95c8-2fdc7a59d18e",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/account/delete",
+            "url": "http://127.0.0.1:9090/api/account/delete",
+            "method": "DELETE",
+            "sortNum": 60000,
+            "created": "2024-09-05T14:35:27.716Z",
+            "modified": "2024-09-05T14:35:27.716Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"ae0d2025-7d82-40a4-a11f-07f3ab543ccb\",\n  \"email\": \"qwe@asd.zxc\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "919ab975-d14e-456d-8bf6-9c2895400493",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/account/register",
+            "url": "http://127.0.0.1:9090/api/account/register",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-09-05T14:35:37.465Z",
+            "modified": "2024-09-05T14:35:37.465Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"qwe@asd.zxc\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "ffe3fb1c-c6c8-40b4-847b-3ab63c2ee19f",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/account/data",
+            "url": "http://127.0.0.1:9090/api/account/data",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2024-09-05T14:35:58.095Z",
+            "modified": "2024-09-05T14:35:58.095Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "Bearer NGMzMjA4ODAtMmNlYS00YzljLTgwOWQtODBjMTgyNDdlYjU0Og=="
+                }
+            ]
+        },
+        {
+            "_id": "f688cfda-9d66-47fd-83a4-1176114e2007",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/account/update",
+            "url": "http://127.0.0.1:9090/api/account/update",
+            "method": "PATCH",
+            "sortNum": 90000,
+            "created": "2024-09-05T14:36:04.319Z",
+            "modified": "2024-09-05T14:36:04.319Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"4c320880-2cea-4c9c-809d-80c18247eb54\",\n  \"email\": \"foo@bar.baz\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "638e21c8-00f8-4b02-a002-6c006626aa9a",
+            "colId": "f4c76a8d-ff5a-4fe2-99ae-7132331d5ee6",
+            "containerId": "",
+            "name": "http://127.0.0.1:9090/api/availability/email?q=foo@bar.baz",
+            "url": "http://127.0.0.1:9090/api/availability/email?q=qwe@asd.zxc",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-09-05T14:36:10.854Z",
+            "modified": "2024-09-05T14:36:10.855Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "q",
+                    "value": "qwe@asd.zxc",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "a-pBJ_-kJvHdwgfeNgTg_9A49skXV_Iinahwr5FaxhsEO-t7D8z3XNQpKjCTTUmGXXzBhbLKJ6F36yxR4bqOUg"
+}
