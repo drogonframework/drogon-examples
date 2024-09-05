@@ -16,6 +16,10 @@
                 - required
                 - type: string
 
+            ```
+            http://localhost:9090/api/availability/email?q=foo@bar.baz
+            ```
+
             ---
 
         - expected response:
@@ -44,11 +48,11 @@
             - Authorization: Bearer {username:password}
                 - replace username with your account id with *base64 encoding*
                 - replace password to empty
-                - result from:
+                - from:
                     ```
                     Authorization: Bearer 3baea6b5-374d-4ae1-8dea-35c33b2b2139:
                     ```
-                - result to:
+                - become:
                     ```
                     Authorization: Bearer M2JhZWE2YjUtMzc0ZC00YWUxLThkZWEtMzVjMzNiMmIyMTM5Og==
                     ```
@@ -103,6 +107,13 @@
             - email:
                 - required
                 - type: string
+
+            ```json
+            {
+                "id": "4c320880-2cea-4c9c-809d-80c18247eb54",
+                "email": "foo@bar.baz"
+            }
+            ```
 
             ---
 
@@ -159,6 +170,13 @@
                 - required
                 - type: string
 
+            ```json
+            {
+                "id": "ae0d2025-7d82-40a4-a11f-07f3ab543ccb",
+                "email": "foo@bar.baz"
+            }
+            ```
+
             ---
 
         - expected response:
@@ -167,13 +185,6 @@
                 "data": null,
                 "message": "account has been removed",
                 "ok": true
-            }
-            ```
-            ```json
-            {
-                "data": null,
-                "message": "nothing todo",
-                "ok": false
             }
             ```
             ```json
@@ -199,6 +210,12 @@
             - email:
                 - required
                 - type: string
+
+            ```json
+            {
+                "email": "foo@bar.baz"
+            }
+            ```
 
             ---
 
@@ -241,12 +258,22 @@
         - compose:
             - idAccount: existing id account
 
+            ```
+            http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/new
+            ```
+
             ---
 
         - body:
             - stash_name:
                 - required
                 - type: string
+
+            ```json
+            {
+                "stash_name": "stash2"
+            }
+            ```
 
             ---
 
@@ -308,6 +335,10 @@
         - compose:
             - idAccount: existing id account
 
+            ```
+            http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/all
+            ```
+
             ---
 
         - body:
@@ -368,12 +399,22 @@
             - idAccount: existing id account
             - idStash: existing id stash to related account
 
+            ```
+            http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/82db987e-51bd-41e1-8cc7-48ea8a78e234/add/item
+            ```
+
             ---
 
         - body:
             - item_name:
                 - required
                 - type: string
+
+            ```json
+            {
+                "item_name": "item 1"
+            }
+            ```
 
             ---
 
@@ -422,6 +463,10 @@
             - idAccount: existing id account
             - idStash: existing id stash to related account
 
+            ```
+            http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/8e262994-0fa4-41c0-8522-76e65ec27193/delete
+            ```
+
             ---
 
         - body:
@@ -467,12 +512,22 @@
             - idAccount: existing id account
             - idStash: existing id stash to related account
 
+            ```
+            http://127.0.0.1:9090/api/stash/4c320880-2cea-4c9c-809d-80c18247eb54/82db987e-51bd-41e1-8cc7-48ea8a78e234/delete/item
+            ```
+
             ---
 
         - body:
             - item_name:
                 - required
                 - type: string
+
+            ```json
+            {
+                "item_name": "item 1"
+            }
+            ```
 
             ---
 
