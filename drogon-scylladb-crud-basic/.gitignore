@@ -1,0 +1,57 @@
+##
+## directory
+##
+.vs
+
+[Bb][Ii][Nn]
+[Bb][Uu][Ii][Ll][Dd]
+[Ll][Oo][Gg]
+[Ll][Oo][Gg][Ss]
+[Pp][Uu][Bb][Ll][Ii][Cc]
+
+node_modules
+
+
+##
+## extension
+##
+*.bak
+*.bak*
+*.bak.*
+*.lib
+*.dll
+*.exe
+*.a
+*.o
+*.so
+*.dylib
+*.framework
+
+*config.h
+*config.js
+*config.scss
+*export.h
+
+*Zone.Identifier
+
+
+##
+## file
+##
+# /.vscode/settings.json
+# /.vscode/launch.json
+
+/.tmp.md
+
+project-build-development*.sh
+project-build-staging*.sh
+project-build-demo*.sh
+project-build-release*.sh
+
+project-cleanup.sh
+
+/configs/json/drogon_framework.json
+
+/configs/json/frontend_views.json
+
+/package-lock.json
