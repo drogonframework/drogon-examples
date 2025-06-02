@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+		"checkJs": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		"strict": true,
+        "target": "esnext",
+        "module": "esnext",
+		"moduleResolution": "bundler",
+        "baseUrl": "./",
+        "paths": {
+            "@libfrontend/*": ["sources/library/libfrontend/src/*"]
+        }
+    },
+    "exclude": [
+        "sources/backend",
+        "sources/library/libbackend"
+    ],
+    "include": [
+        "assets-sync.js",
+        "rollup.config.js",
+        "sources/frontend/**/*",
+        "sources/frontend/**/*.js",
+        "sources/frontend/**/*.css",
+        "sources/frontend/**/*.scss",
+        "sources/frontend/**/*.svelte",
+        "sources/frontend/**/*.svelte.js",
+        "sources/library/libfrontend/**/*",
+        "sources/library/libfrontend/**/*.js",
+        "sources/library/libfrontend/**/*.css",
+        "sources/library/libfrontend/**/*.scss",
+        "sources/library/libfrontend/**/*.svelte",
+        "sources/library/libfrontend/**/*.svelte.js",
+    ]
+}

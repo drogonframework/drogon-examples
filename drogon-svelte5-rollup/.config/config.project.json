@@ -1,0 +1,11 @@
+{
+    "default": {
+        "non_signin_username": "guest"
+    },
+    "supported": {
+        "languages": [
+            "en",
+            "id"
+        ]
+    }
+}

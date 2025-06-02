@@ -1,0 +1,15 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.buildDirectory": "${workspaceFolder}/build/${variant:buildType}",
+    "cmake.configureArgs": [
+        "-Wno-dev"
+    ],
+    "cmake.configureSettings": {
+        // "CMAKE_TOOLCHAIN_FILE": "/path/to/toolchain.cmake",
+
+        //
+
+        "_": "don't use me"
+    },
+    "dotnet.defaultSolution": "disable"
+}

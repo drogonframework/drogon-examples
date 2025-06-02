@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<%c++
+    auto USE_LANGUAGE = (@@.get<std::string>("{LANGUAGE}").length() > 0) ? true : false;
+    auto USE_USERID = (@@.get<std::string>("{USERID}").length() > 0) ? true : false;
+    auto USE_USERNAME = (@@.get<std::string>("{USERNAME}").length() > 0) ? true : false;
+    auto USE_BUNDLE_CSS = (@@.get<std::string>("{BUNDLE_CSS}").length() > 0) ? true : false;
+    auto USE_BUNDLE_JS = (@@.get<std::string>("{BUNDLE_JS}").length() > 0) ? true : false;
+    auto USE_TITLE = (@@.get<std::string>("{TITLE}").length() > 0) ? true : false;
+    auto USE_ROBOTS = (@@.get<std::string>("{ROBOTS}").length() > 0) ? true : false;
+    auto USE_KEYWORDS = (@@.get<std::string>("{KEYWORDS}").length() > 0) ? true : false;
+    auto USE_ABOUT = (@@.get<std::string>("{ABOUT}").length() > 0) ? true : false;
+    auto USE_DESCRIPTION = (@@.get<std::string>("{DESCRIPTION}").length() > 0) ? true : false;
+    auto USE_URL = (@@.get<std::string>("{URL}").length() > 0) ? true : false;
+    auto USE_COPYRIGHT = (@@.get<std::string>("{COPYRIGHT}").length() > 0) ? true : false;
+    auto USE_IMAGE = (@@.get<std::string>("{IMAGE}").length() > 0) ? true : false;
+    auto USE_VIDEO = (@@.get<std::string>("{VIDEO}").length() > 0) ? true : false;
+%>
+<%c++ if(USE_LANGUAGE) { %>
+    <html lang="[[{LANGUAGE}]]">
+<%c++}else{%>
+    <html>
+<%c++}%>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <script>
+        const BACKEND_LANGUAGE = Object.freeze("[[{LANGUAGE}]]");
+    </script>
+    <%c++ if(USE_USERID) { %>
+    <script>
+        const BACKEND_USERID = Object.freeze("[[{USERID}]]");
+    </script>
+    <%c++}%>
+
+    <script>
+        const BACKEND_MESSAGE = Object.freeze("[[{MESSAGE}]]");
+        const BACKEND_USERNAME = Object.freeze("[[{USERNAME}]]");
+    </script>
+
+    <%c++ if(USE_BUNDLE_CSS) { %>
+        [[{BUNDLE_CSS}]]
+    <%c++}%>
+    <%c++ if(USE_BUNDLE_JS) { %>
+        [[{BUNDLE_JS}]]
+    <%c++}%>
+    <%c++ if(USE_TITLE) { %>
+        <title>[[{TITLE}]]</title>
+        <meta name="title" content="[[{TITLE}]]"/>
+        <meta property="og:title" content="[[{TITLE}]]"/>
+    <%c++}%>
+    <%c++ if(USE_ROBOTS) { %>
+        <meta name="robots" content="[[{ROBOTS}]]"/>
+        <meta property="og:robots" content="[[{ROBOTS}]]"/>
+    <%c++}%>
+    <%c++ if(USE_LANGUAGE) { %>
+        <meta name="lang" content="[[{LANGUAGE}]]"/>
+        <meta property="og:lang" content="[[{LANGUAGE}]]"/>
+        <meta name="language" content="[[{LANGUAGE}]]"/>
+        <meta property="og:language" content="[[{LANGUAGE}]]"/>
+    <%c++}%>
+    <%c++ if(USE_KEYWORDS) { %>
+        <meta name="keywords" content="[[{KEYWORDS}]]"/>
+        <meta property="og:keywords" content="[[{KEYWORDS}]]"/>
+    <%c++}%>
+    <%c++ if(USE_ABOUT) { %>
+        <meta name="about" content="[[{ABOUT}]]"/>
+        <meta property="og:about" content="[[{ABOUT}]]"/>
+    <%c++}%>
+    <%c++ if(USE_DESCRIPTION) { %>
+        <meta name="description" content="[[{DESCRIPTION}]]"/>
+        <meta property="og:description" content="[[{DESCRIPTION}]]"/>
+    <%c++}%>
+    <%c++ if(USE_URL) { %>
+        <meta name="url" content="[[{URL}]]"/>
+        <meta property="og:url" content="[[{URL}]]"/>
+    <%c++}%>
+    <%c++ if(USE_COPYRIGHT) { %>
+        <meta name="copyright" content="[[{COPYRIGHT}]]"/>
+        <meta property="og:copyright" content="[[{COPYRIGHT}]]"/>
+    <%c++}%>
+    <%c++ if(USE_IMAGE) { %>
+        <meta name="image" content="[[{IMAGE}]]"/>
+        <meta name="image:url" content="[[{IMAGE}]]"/>
+        <meta name="image:secure_url" content="[[{IMAGE}]]"/>
+        <meta property="og:image" content="[[{IMAGE}]]"/>
+        <meta property="og:image:url" content="[[{IMAGE}]]"/>
+        <meta property="og:image:secure_url" content="[[{IMAGE}]]"/>
+        <meta name="image:alt" content="[[{IMAGE}]]"/>
+        <meta property="og:image:alt" content="[[{IMAGE}]]"/>
+    <%c++}%>
+    <%c++ if(USE_VIDEO) { %>
+        <meta name="video" content="[[{VIDEO}]]"/>
+        <meta name="video:url" content="[[{VIDEO}]]"/>
+        <meta name="video:secure_url" content="[[{VIDEO}]]"/>
+        <meta property="og:video" content="[[{VIDEO}]]"/>
+        <meta property="og:video:url" content="[[{VIDEO}]]"/>
+        <meta property="og:video:secure_url" content="[[{VIDEO}]]"/>
+        <meta name="video:alt" content="[[{VIDEO}]]"/>
+        <meta property="og:video:alt" content="[[{VIDEO}]]"/>
+    <%c++}%>
+</head>
+<body>    
+</body>
+</html>
