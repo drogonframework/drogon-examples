@@ -1,0 +1,4 @@
+##
+## specific ignore for libfrontend
+##
+/src/config.js

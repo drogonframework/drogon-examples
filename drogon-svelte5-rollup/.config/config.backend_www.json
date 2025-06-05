@@ -1,0 +1,83 @@
+{
+    "custom_config": {
+        "package": "api_prothegee_com_v1"
+    },
+    "listeners": [
+        {
+            "address": "0.0.0.0",
+            "port": 10001,
+            "https": false
+        }
+    ],
+    "app": {
+        "reuse_port": false,
+        "number_of_threads": 0,
+        "enable_session": true,
+        "session_timeout": 0,
+        "session_same_site" : "Lax",
+        "session_cookie_key": "_drogon-svelte5-rollup",
+        "session_max_age": 518400, // in seconds
+        "document_root": "../static/public",
+        "upload_path": "u",
+        "file_types": [
+            "jpg", "jpeg", "png", "svg", "ico",
+            "csv", "json", "xls", "xlsx",
+            "html", "css", "js", "wasm"
+        ],
+        "max_connections": 100000,
+        "max_connections_per_ip": 0,
+        "json_parser_stack_limit": 1000000,
+        "enable_unicode_escaping_in_json": true,
+        "float_precision_in_json": {
+            "precision": 0,
+            "precision_type": "significant"
+        },
+        "log": {
+            "use_spdlog": false,
+            "log_path": "../.logs",
+            "logfile_base_name": "drogon-svelte5-rollup.debug.log",
+            "log_size_limit": 100000000,
+            "max_files": 100,
+            "log_level": "DEBUG",
+            "display_local_time": false
+        },
+        "run_as_daemon": false,
+        "handle_sig_term": true,
+        "relaunch_on_error": false,
+        "use_sendfile": true,
+        "use_gzip": true,
+        "use_brotli": false,
+        "static_files_cache_time": -1, // use 6 minutes in production
+        "idle_connection_timeout": 60, // in seconds
+        "server_header_field": "drogon framework",
+        "enable_server_header": true,
+        "enable_date_header": true,
+        "keepalive_requests": 0,
+        "pipelining_requests": 0,
+        "gzip_static": true,
+        "br_static": true,
+        "client_max_body_size": "6M",
+        "client_max_memory_body_size": "64K",
+        "client_max_websocket_message_size": "128K",
+        "enabled_compressed_request": false,
+        "enable_request_stream": false
+    },
+    "plugins": [
+        {
+            "name": "drogon::plugin::AccessLogger",
+            "dependencies": [],
+            "config": {
+                "use_spdlog": false,
+                "log_path": "../.logs",
+                "log_format": "",
+                "log_file": "drogon-svelte5-rollup.access.log",
+                "log_size_limit": 0,
+                "use_local_time": true,
+                "log_index": 0,
+                "show_microseconds": true,
+                // "custom_time_format": "",
+                "use_real_ip": true
+            }
+        }
+    ]
+}

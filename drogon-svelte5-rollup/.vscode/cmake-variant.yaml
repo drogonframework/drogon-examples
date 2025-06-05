@@ -1,0 +1,23 @@
+buildType:
+  default: debug
+  choices:
+    debug:
+      short: Debug
+      long: debug build
+      buildType: Debug
+    profile:
+      short: Profile
+      long: profile debug build
+      buildType: Debug
+    release:
+      short: Release
+      long: release build
+      buildType: Release
+    relwithdebinfo:
+      short: RelWithDebInfo
+      long: release with debug info build
+      buildType: RelWithDebInfo
+    minsizerel:
+      short: MinSizeRel
+      long: minimal size in release build
+      buildType: MinSizeRel

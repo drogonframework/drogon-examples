@@ -1,0 +1,4 @@
+##
+## specific ignore for libbackend
+##
+/src/libbackend/config.hh

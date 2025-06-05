@@ -1,0 +1,24 @@
+{
+    "compounds": [
+        {
+            "name": "_DEBUG: drogon-svelte5-rollup",
+            "configurations": [
+                "backend_www"
+            ],
+            "stopAll": true
+        }
+    ],
+    "configurations": [
+        {
+            "name": "backend_www",
+            "type": "cppvsdbg", // windows=cppvsdbg else=cppdbg
+            "request": "launch",
+            "cwd": "${workspaceFolder}/.out",
+            "program": "${workspaceRoot}/.out/backend_www",
+            "stopAtEntry": false,
+            "args": [],
+            "environment": [],
+            "console": "integratedTerminal", // include this if using cppvsdbg
+        }
+    ]
+}
